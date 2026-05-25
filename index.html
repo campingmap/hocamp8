@@ -535,16 +535,22 @@
     .overview-grid{grid-template-columns:repeat(2,1fr)}
     .timeline-item{grid-template-columns:1fr;gap:8px}
     .camp-grid{grid-template-columns:1fr;gap:36px}
-    .programs-grid{grid-template-columns:1fr}
-    .travel-grid{grid-template-columns:repeat(2,1fr)!important}
+    .programs-grid{grid-template-columns:1fr!important}
+    .travel-grid{grid-template-columns:1fr!important}
     .nav-links{display:none}
     section{padding:72px 24px}
     .cta-box{padding:56px 28px}
+    .checkout-block{flex-direction:column;gap:16px;text-align:center}
+    .site-grid{grid-template-columns:1fr!important}
+    .info-grid{grid-template-columns:1fr!important}
+    .mate-grid{grid-template-columns:1fr!important}
+    .cta-reward{flex-direction:column;align-items:flex-start!important}
   }
   @media(max-width:520px){
     .overview-grid{grid-template-columns:1fr}
     .camp-facts{grid-template-columns:1fr}
-    .programs-grid{grid-template-columns:1fr}
+    .programs-grid{grid-template-columns:1fr!important}
+    .travel-grid{grid-template-columns:1fr!important}
   }
 
   /* entrance animation */
@@ -801,7 +807,7 @@
     <!-- 사이트 요금 -->
     <div style="margin-top:64px;">
       <div class="section-eyebrow" style="margin-bottom:20px;">SITE & FEE</div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px;">
+      <div class="site-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px;">
 
         <!-- 노키즈 사이트 -->
         <div style="
@@ -859,7 +865,7 @@
       </div>
 
       <!-- 안내 사항 -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div class="info-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div style="
           background:#fff;border:1px solid var(--line);border-left:4px solid var(--forest);
           border-radius:14px;padding:20px 24px;
@@ -915,7 +921,7 @@
     </div>
 
     <!-- 카드 그리드 -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:36px;">
+    <div class="mate-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:36px;">
 
       <!-- 지프 텐트 -->
       <div style="
@@ -955,7 +961,7 @@
     </div>
 
     <!-- 후기 혜택 배너 -->
-    <div style="
+    <div class="cta-reward" style="
       background:linear-gradient(135deg,var(--gold) 0%,#e76f51 100%);
       border-radius:20px;
       padding:32px 36px;
